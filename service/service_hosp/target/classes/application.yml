@@ -73,3 +73,8 @@ spring:
 #spring.rabbitmq.port=5672
 #spring.rabbitmq.username=guest
 #spring.rabbitmq.password=guest
+
+#分为：OFF、FATAL、ERROR、WARN、INFO、DEBUG、ALL
+#logging:
+#  level:
+#    root: debug
