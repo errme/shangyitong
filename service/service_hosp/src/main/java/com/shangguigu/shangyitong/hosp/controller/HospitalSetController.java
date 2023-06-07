@@ -132,6 +132,8 @@ public class HospitalSetController {
         String hoscode = hospitalSet.getHoscode();
         //TODO 发送短信
         return Result.ok();
+
+        //
     }
 
 }
