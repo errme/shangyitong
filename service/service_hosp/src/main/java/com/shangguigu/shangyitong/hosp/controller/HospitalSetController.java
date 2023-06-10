@@ -20,6 +20,7 @@ import java.util.Random;
 @Api(tags = "医院设置管理")
 @RestController
 @RequestMapping("/admin/hosp/hospitalSet")
+@CrossOrigin
 public class HospitalSetController {
 
     @Autowired
@@ -70,7 +71,7 @@ public class HospitalSetController {
     }
 
     //4 添加医院设置
-    @PostMapping("saveHospitalSet")
+    @PostMapping("addHospitalSet")
     public Result saveHospitalSet(@RequestBody HospitalSet hospitalSet) {
         //设置状态 1 使用 0 不能使用
         hospitalSet.setStatus(1);

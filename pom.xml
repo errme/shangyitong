@@ -11,7 +11,8 @@
         <module>common</module>
         <module>model</module>
         <module>service</module>
-        <module>service/service_user</module>
+<!--        <module>service/service_user</module>-->
+<!--        <module>service/service_cmn</module>-->
 
     </modules>
 

@@ -1,4 +1,4 @@
-package com.shangguigu.shangyitong.hosp.config;
+package com.shangguigu.shangyitong.cmn.config;
 
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import org.mybatis.spring.annotation.MapperScan;
@@ -6,11 +6,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@MapperScan("com.shangguigu.shangyitong.hosp.mapper")
-public class HospConfig {
-
+@MapperScan("com.shangguigu.shangyitong.cmn.mapper")
+public class CmnConfig {
+    /**
+     * 分页插件
+     */
     @Bean
-    public PaginationInterceptor paginationInterceptor(){
+    public PaginationInterceptor paginationInterceptor() {
         return new PaginationInterceptor();
     }
 }
