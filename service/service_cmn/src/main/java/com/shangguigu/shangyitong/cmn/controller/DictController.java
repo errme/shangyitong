@@ -30,11 +30,13 @@ public class DictController {
         List<Dict> list = dictService.findChlidData(dictCode);
         return Result.ok(list);
     }
+
     //导出数据字典接口
     @GetMapping("exportDictData")
-    public void exportDict(HttpServletResponse response){
+    public void exportDict(HttpServletResponse response) {
         dictService.exportDictData(response);
     }
+
     //导入数据字典
     @PostMapping("importDictData")
     public Result importDict(MultipartFile file) {
