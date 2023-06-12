@@ -23,7 +23,7 @@ spring:
     time-zone: GMT+8
 
   redis:
-#    host: 192.168.44.165
+    #    host: 192.168.44.165
     host: 127.0.0.1
     port: 6379
     database: 0
@@ -34,6 +34,10 @@ spring:
         max-wait: -1
         max-idle: 5
         min-idle: 0
+
+#  devtools:
+#    livereload:
+#      port: 88888
 
 
     #  spring.redis.lettuce.pool.max-active=20
@@ -53,7 +57,7 @@ spring:
     #        server-addr: 127:0:0:1:8848
 
     #设置sentinel地址
-  #    sentinel:
+    #    sentinel:
   #      transport:
   #        dashboard=http://127:0:0:1:8858:
 

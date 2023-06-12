@@ -22,7 +22,12 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
 
-#  mvc:
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1:27017/yygh_hosp
+      auto-index-creation: false
+
+    #  mvc:
 #    pathmatch:
 #      matching-strategy: ant_path_matcher
 
