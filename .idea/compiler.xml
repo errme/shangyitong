@@ -11,9 +11,11 @@
         <module name="service_user" />
         <module name="service_util" />
         <module name="model" />
+        <module name="service_cmn_client" />
         <module name="service_hosp" />
         <module name="service_cmn" />
         <module name="hospital-manage" />
+        <module name="server_gateway" />
       </profile>
     </annotationProcessing>
   </component>
@@ -23,8 +25,11 @@
       <module name="common_util" options="-parameters" />
       <module name="hospital-manage" options="-parameters" />
       <module name="model" options="-parameters" />
+      <module name="server_gateway" options="-parameters" />
       <module name="service" options="-parameters" />
+      <module name="service_client" options="-parameters" />
       <module name="service_cmn" options="-parameters" />
+      <module name="service_cmn_client" options="-parameters" />
       <module name="service_hosp" options="-parameters" />
       <module name="service_user" options="-parameters" />
       <module name="service_util" options="-parameters" />

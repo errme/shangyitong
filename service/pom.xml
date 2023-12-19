@@ -9,9 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-<!--    <modules>-->
-<!--        <module>service_hosp</module>-->
-<!--    </modules>-->
+    <modules>
+        <module>service_hosp</module>
+        <module>service_cmn</module>
+        <module>service_user</module>
+    </modules>
 
     <artifactId>service</artifactId>
     <packaging>pom</packaging>
@@ -26,6 +28,12 @@
         <dependency>
             <groupId>org.shangguigu.shangyitong</groupId>
             <artifactId>model</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.shangguigu.shangyitong</groupId>
+            <artifactId>service_cmn_client</artifactId>
             <version>1.0</version>
         </dependency>
         <!--web-->
@@ -56,15 +64,15 @@
 <!--            <version>3.3.1</version>-->
 <!--        </dependency>-->
         <!-- 服务调用feign -->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-openfeign</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
         <!-- 服务注册 -->
-<!--        <dependency>-->
-<!--            <groupId>com.alibaba.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
         <!-- 流量控制 -->
 <!--        <dependency>-->
 <!--            <groupId>com.alibaba.cloud</groupId>-->

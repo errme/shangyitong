@@ -4,7 +4,7 @@ server:
   # 服务名
 spring:
   application:
-    name: service_hosp
+    name: service-hosp
 
   # 环境设置：dev、test、prod
   profiles:
@@ -32,16 +32,16 @@ spring:
 #      matching-strategy: ant_path_matcher
 
 
-    # nacos服务地址
-#  cloud:
-#    nacos:
-#      discovery:
-#        server-addr: 127:0:0:1:8848
+  # nacos服务地址
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
 
     #设置sentinel地址
-#    sentinel:
-#      transport:
-#        dashboard=http://127:0:0:1:8858:
+    sentinel:
+      transport:
+        dashboard=http://127.0.0.1:8858
 
   #mongodb地址
 #  data:

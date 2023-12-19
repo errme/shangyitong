@@ -26,7 +26,7 @@ public class DictEeVo {
 	@ExcelProperty(value = "值" ,index = 3)
 	private String value;
 
-	@ExcelProperty(value = "编码" ,index = 4)
+	@ExcelProperty(value = "//@CrossOrigin" ,index = 4)
 	private String dictCode;
 
 }
